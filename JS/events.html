@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 onclick="changeText(this)">Learning events</h1>
+    <br> <hr>
+    <p>this is paragraph</p>
+    <div class="wrapper1">
+        <ul class="places-list">
+            <li>delhi</li>
+            <li>noida</li>
+            <li>green park</li>
+        </ul>
+    </div>
+
+    <div>
+    <!-- onclick event have been used -->
+        <button onclick="displayDate()">the time is</button>
+        <p id="demo"></p>
+    </div>
+
+    <div>
+    <!-- onchange events have been used -->
+    <input type="text" id="firstname" onchange="upperCase()"/>
+    </div>
+
+    <div onmouseup="mUp(this)" onmousedown="mDown(this)" onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color: red; width: 97px; height: 20px; padding: 40px;">mouse over me</div>
+
+    <script>
+        function displayDate(){
+            document.getElementById("demo").innerHTML = new Date();
+        }
+
+        function changeText(id){
+            id.innerHTML="Text has been changed";
+        }
+
+        function upperCase(){
+            const x = document.getElementById("firstname");
+            x.value = x.value.toUpperCase();
+        }
+
+        function mOver(obj){
+            obj.innerHTML="can you see the change ?"
+
+        }
+
+        function mOut(obj){
+            obj.innerHTML="thankyou for mousing"
+
+        }
+
+        function mUp(obj){
+            obj.style.backgroundColor = "green";
+            obj.innerHTML = "ha ab shanti mili hai";
+        }
+
+        function mDown(obj){
+            obj.style.backgroundColor = "yellow";
+            obj.innerHTML = "release me ?";
+        }
+    </script>
+</body>
+</html>
