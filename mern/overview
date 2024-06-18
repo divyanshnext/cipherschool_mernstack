@@ -1,0 +1,18 @@
+<!-- MERN stack is a JavaScript Stack that is used for easier and faster deployment of
+full stack web applications. MERN Stack comprises of four technologies namely
+MongoDB, Express, React and Node.js. It is designed to make the development
+process smoother and easier.
+Each of these four powerful technologies provide an end to end framework for the
+developers to work and each of these technologies, play a big part in the
+development of web applications. -->
+
+<!-- MongoDB
+MongoDB is a NoSQL database where each record is a document comprising of
+key-value pairs that are similar to JSON (JavaScript Object Notation) objects.
+MongoDB is flexible and allows its users to create schema, databases, tables, etc.
+Documents that are identifiable by a primary key make up the basic unit of
+MongoDB. Once MongoDB is installed, users can make use of Mongo shell as
+well. Mongo shell provides a JavaScript interface through which the users can
+interact and carry out operations (eg: querying, updating records, deleting
+records). -->
+
