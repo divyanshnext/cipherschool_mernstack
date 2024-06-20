@@ -1,4 +1,5 @@
 @import url(https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css);
+/* we have imported it from the website sematic ui --> search cdn */
 
 body {
   margin: 0;
@@ -13,7 +14,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+/* ye center wala css ToDoScreen me hua hai */
 .center {
   text-align: center;
+}
+
+.screen {
+  padding: 5vh 10%;
 }
