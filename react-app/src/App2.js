@@ -11,10 +11,10 @@ class App extends Component {
     return (
       <>
       <div>
-        <h1>This is H1 JSX {this.name} </h1>
+        <h1>I AM LEARNING MERENSTACK BY {this.name} </h1>
       </div>
       <div>
-        <p>this is paragraph in JSX by {this.author}</p>
+        <p>TESTING HAHHHAHHAHA </p>
       </div>
       </>
   )
