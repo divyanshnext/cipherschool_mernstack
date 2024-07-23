@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const AddTask = () => {
+const AddTask = ({onSubmit}) => {
     // return <p>this is add task </p>
 
     const [task,setTask] = useState({
@@ -18,11 +18,13 @@ const AddTask = () => {
     let onFormSubmit = (e) => {
         e.preventDefault();
         console.log(task);
+        onSubmit(task);
     };
 
 
     return (
-        <>
+        
+        <section className="screen">
         <h3 className = "ui heading center">Add New Task</h3>
         <div className="ui form">
             <form onSubmit = {onFormSubmit}>
@@ -38,6 +40,7 @@ const AddTask = () => {
                 placeholder="Task Title" 
                 name="title" 
                 onChange={handleInputChange}
+                value = {task.title}  // two way binding
                 />
 
              </div>
@@ -54,6 +57,7 @@ const AddTask = () => {
                 placeholder="Task Description" 
                 name="description"
                 onChange = {handleInputChange}
+                value = {task.description}  // two way binding
                 />
 
              </div>
@@ -61,7 +65,7 @@ const AddTask = () => {
              <button type="submit" class="ui primary button">Submit</button>
              </form>
         </div>
-        </>
+        </section>
     )
 }
 
