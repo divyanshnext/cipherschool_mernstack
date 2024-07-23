@@ -1,29 +1,28 @@
-const Task = () => {
+import { formatDate } from "../utils/DateUtil";
 
-    return(
-        <div className="card">
-    <div className="content">
+const Task = ({task: {title,description,createdDate}}) => {
+  
+
+  return(
+      //copied from semantic ui -- class is replaced by className
+    <div className="card">
+      <div className="content">
       
-      <div className="header">
-        Task
-      </div>
-      <div className="meta">
-        created date
-      </div>
-      <div className="description">
-        going to gym is good for muscle growth but not good for lifetime
-      </div>
-    </div>
-    <div className="extra content">
-      <div className="ui two buttons">
-        <div className="ui basic green button">Edit task</div>
-        <div className="ui basic red button">Delete task</div>
-      </div>
-    </div>
-  </div>
-    );
+        <div className="header">{title}</div>
+        <div className="meta">{formatDate(createdDate)}</div>
+        <div className="description">{description}</div>
 
-    
+      </div>
+
+      <div className="extra content">
+        <div className="ui two buttons">
+          <div className="ui basic green button">Edit task</div>
+          <div className="ui basic red button">Delete task</div>
+        </div>
+      </div>
+
+    </div>
+  );    
 }
 
 export default Task;
