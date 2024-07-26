@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/cipherschool_mernstack/static/css/main.ddf70b8d.css",
-    "main.js": "/cipherschool_mernstack/static/js/main.ac9b5978.js",
+    "main.js": "/cipherschool_mernstack/static/js/main.09921bca.js",
     "static/js/453.2a82e7ac.chunk.js": "/cipherschool_mernstack/static/js/453.2a82e7ac.chunk.js",
     "index.html": "/cipherschool_mernstack/index.html",
     "main.ddf70b8d.css.map": "/cipherschool_mernstack/static/css/main.ddf70b8d.css.map",
-    "main.ac9b5978.js.map": "/cipherschool_mernstack/static/js/main.ac9b5978.js.map",
+    "main.09921bca.js.map": "/cipherschool_mernstack/static/js/main.09921bca.js.map",
     "453.2a82e7ac.chunk.js.map": "/cipherschool_mernstack/static/js/453.2a82e7ac.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ddf70b8d.css",
-    "static/js/main.ac9b5978.js"
+    "static/js/main.09921bca.js"
   ]
 }
