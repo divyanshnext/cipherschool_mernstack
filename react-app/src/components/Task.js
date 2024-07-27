@@ -7,7 +7,6 @@ const Task = ({ task: incomingTask }) => {
   const { deleteTask, editTask } = useContext(TaskContext);
   const [isEditing, setIsEditing] = useState(false);
   const [task, setTask] = useState({ ...incomingTask });
-  const [originalTask, setOriginalTask] = useState({ ...incomingTask });
 
   const handleInputChange = (e) => {
     setTask({
@@ -22,7 +21,7 @@ const Task = ({ task: incomingTask }) => {
   };
 
   const handleCancel = () => {
-    setTask(originalTask); // Restore original task
+    setTask(incomingTask); // Restore original task
     setIsEditing(false);   // Exit editing mode
   };
 
