@@ -1,0 +1,12 @@
+{
+  "name": "math",
+  "version": "1.0.0",
+  "description": "this is test app based on Math",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "app.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

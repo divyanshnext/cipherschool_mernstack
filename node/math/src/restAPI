@@ -1,0 +1,11 @@
+// what is rest API
+it stands for representational state transfer 
+
+it is actually a architectural style that defines or conditions which are to be use web services 
+
+accesing web services as a simple method without processing 
+
+it has two parts 
+1. url
+2. http method
+
